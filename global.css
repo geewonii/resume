@@ -1,0 +1,27 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, i, b, textarea, button, input, select  {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  color: #313131;
+  box-sizing: border-box;
+  font-weight: lighter;
+  font-family: 'PingFang SC Medium', sans-serif, 'Microsoft YaHei';
+  -webkit-tap-highlight-color:transparent;
+  outline: none;
+}
+
+html,body {
+  font-size: 625%;
+}
+
+a {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+a:hover, a:focus, a:active {
+  color: #1890ff;
+}

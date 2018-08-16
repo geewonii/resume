@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "umi dev",
+    "build": "set BASE_URL=/demo/resume/ && umi build"
+  },
+  "devDependencies": {
+    "umi-plugin-routes": "^0.1.2"
+  },
+  "dependencies": {
+    "three": "^0.95.0"
+  }
+}

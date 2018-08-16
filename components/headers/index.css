@@ -1,0 +1,60 @@
+.headers {
+  position: relative;
+  width: 100%;
+}
+
+
+.contents {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  height: 2rem;
+  margin: .52rem .115rem 0 .115rem;
+  border-radius: .1rem .1rem 0 0;
+  z-index: 0;
+}
+
+.tHalfCircle {
+  position: absolute;
+  width: .76rem;
+  height: .38rem;
+  border-radius: 0 0 .38rem .38rem;
+  left: calc(50% - .38rem);
+  top: 0;
+}
+
+.tBackground {
+  border: 3.6rem solid rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  right: calc(50% - 4rem);
+  top: -4rem;
+}
+
+.headersText {
+  position: absolute;
+  top: .45rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.headersText p {
+  margin-top: .08rem;
+}
+
+.headersText span {
+  margin: 0 .05rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .tBackground {
+    border-width: 10rem;
+    width: 20rem;
+    height: 20rem;
+    right: calc(50% - 10rem);
+    top: -10rem;
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  width: 100%;
+  font-size: .14rem;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.backgroundMask {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(to right, #f1897e , #facc68);
+  mask : -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  height: 2.2rem;
+  z-index: -1;
+}
+
+.logos {
+  position: absolute;
+  top: .14rem;
+  z-index: 1;
+  left: calc(50% - .34rem);
+  border-radius: 50%;
+  width: .68rem;
+  text-align: center;
+}
+
+.context {
+  margin: .115rem;
+}
