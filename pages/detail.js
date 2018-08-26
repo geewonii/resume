@@ -1,6 +1,7 @@
-
+import styles from "./detail.css";
+// import ThreeCube from "../components/threeCube";
 
 export default () =>
   <div>
-    <div>详情页</div>
+    {/* <ThreeCube /> */}
   </div>

@@ -1,32 +1,16 @@
-import React, { PureComponent } from 'react';
 import styles from "./index.css";
 
-export default class Headers extends PureComponent {
-  componentDidMount() {
-    const { data, onCallBack } = this.props
-    
-    if(Array.isArray(data)) {
-      let n = 0
-      const container = document.getElementById("text")
-      const timer = setInterval(() => {
-        container.innerHTML += data[n]
-        n += 1
-        if(n >= data.length){
-          window.clearInterval(timer)
-          onCallBack && onCallBack()
-        }
-      }, 200)
-    }
-  }
-  render() {
-    return (
-      <div className={styles.headers}>
-        <div className={styles.contents}>
-          <div className={styles.tHalfCircle}></div>
-          <div className={styles.tBackground}></div>
-          <div id="text" className={styles.headersText}></div>
-        </div>
+export default (props) => {
+  const { data } = props
+  const headTexts = Array.isArray(data) && data.map(item => <div key={item.id}>{item.msg}</div>)
+
+  return (
+    <div className={styles.headers}>
+      <div className={styles.contents}>
+        <div className={styles.tHalfCircle}></div>
+        <div className={styles.tBackground}></div>
+        <div className={`${styles.headersText}`}>{headTexts}</div>
       </div>
-    )
-  }
+    </div>
+  )
 }
